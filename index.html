@@ -13,8 +13,110 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <style>
+      .home {
+        background: linear-gradient(120deg, #ffffff66 50%, transparent 50%)
+            center center,
+          url("./images/home.jpg") no-repeat center right / cover;
+      }
+      .fullpage {
+        background: url("./images/fullpage.jpg") no-repeat center center / cover;
+      }
+      .fullpage .content {
+        background: #ffffff66;
+      }
+    </style>
   </head>
-  <body>
+  <body class="overflow-hidden">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#">鯫生</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide vw-100 vh-100 p-5 home">
+          <div
+            class="w-50 h-100 d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 class="display-1 fw-bold">鯫生私立貴族幼兒園</h1>
+            <p class="display-6 text-center">
+              教育從心開始<br />我們將貼心的照顧您的孩子<br />守護天使稚嫩的翅膀
+            </p>
+            <button type="button" class="btn btn-lg btn-primary">
+              聯繫我們，給孩子一個美好的童年
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide vw-100 vh-100 p-5 fullpage">
+          <div class="content w-100 h-100"></div>
+        </div>
+        <div class="swiper-slide vw-100 vh-100 p-5">Slide 3</div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper-container", {
+        scrollbar: {
+          // 顯示底部滾動條
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+        mousewheel: true, // 滑鼠滾動偵測
+      });
+    </script>
   </body>
 </html>
