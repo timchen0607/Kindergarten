@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" / >
-    <title>Kindergarten</title>
+    <title>鯫生's Kindergarten</title>
 
     <link
       rel="stylesheet"
@@ -22,20 +22,22 @@
       .home {
         background: linear-gradient(120deg, #ffffff66 50%, transparent 50%)
             center center,
-          url("./images/home.jpg") no-repeat center right / cover;
+          url("./images/bg_home.jpg") no-repeat center right / cover;
       }
-      .fullpage {
-        background: url("./images/fullpage.jpg") no-repeat center center / cover;
-        display: flex;
-        align-items: center;
+      .faith {
+        background: url("./images/bg_faith.jpg") no-repeat center center / cover;
       }
-      .fullpage .content {
+      .contact {
+        background: url("./images/bg_contact.jpg") no-repeat center center /
+          cover;
+      }
+      .content {
         background: #ffffffaa;
         padding: 3rem;
       }
     </style>
   </head>
-  <body class="overflow-hidden">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
       <div class="container">
         <h2 class="d-flex align-items-center m-2">
@@ -65,34 +67,32 @@
       </div>
     </nav>
 
-    <div class="swiper-container">
+    <div class="swiper-container text-center">
       <div class="swiper-wrapper">
         <div class="swiper-slide p-5 home">
           <div
             class="w-50 h-100 d-flex flex-column justify-content-center align-items-center"
           >
             <h1 class="display-1 fw-bold">鯫生私立貴族幼兒園</h1>
-            <p class="display-6 text-center">
+            <p class="display-6">
               教育從心開始<br />我們將貼心的照顧您的孩子<br />守護天使稚嫩的翅膀
             </p>
             <button type="button" class="btn btn-lg btn-primary">
-              聯繫我們，給孩子一個美好的童年
+              聯繫鯫生，給孩子一個美好的童年
             </button>
           </div>
         </div>
-        <div class="swiper-slide fullpage">
+        <div class="swiper-slide d-flex align-items-center faith">
           <div class="container content">
             <div class="row border border-2 border-light m-0 p-5">
               <div class="col-12">
-                <h2 class="display-5">給您的孩子一個完美的學前旅程。</h2>
+                <h3 class="display-5">給您的孩子一個完美的學前旅程。</h3>
               </div>
               <div class="col-md-4">
-                <div class="card bg-transparent">
+                <div class="card">
                   <img src="./images/faith-1.jpg" class="card-img-top" />
                   <div class="card-body">
-                    <h5 class="card-title text-center">
-                      全方位的雙語能力 － 全語言教育
-                    </h5>
+                    <h5 class="card-title">全方位的雙語能力 － 全語言教育</h5>
                     <p class="card-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Recusandae pariatur molestiae asperiores magnam, quibusdam
@@ -104,12 +104,10 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card bg-transparent">
+                <div class="card">
                   <img src="./images/faith-2.jpg" class="card-img-top" />
                   <div class="card-body">
-                    <h5 class="card-title text-center">
-                      獨立思考與終身學習 － 探索式教育
-                    </h5>
+                    <h5 class="card-title">獨立思考與終身學習 － 探索式教育</h5>
                     <p class="card-text">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Quisquam incidunt quis culpa veniam fugiat recusandae
@@ -120,12 +118,10 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card bg-transparent">
+                <div class="card">
                   <img src="./images/faith-3.jpg" class="card-img-top" />
                   <div class="card-body">
-                    <h5 class="card-title text-center">
-                      人文關懷與社會參與 － 全人式教育
-                    </h5>
+                    <h5 class="card-title">人文關懷與社會參與 － 全人式教育</h5>
                     <p class="card-text">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Veritatis, reprehenderit officia. Possimus eligendi vitae
@@ -139,12 +135,12 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide fullpage">
+        <div class="swiper-slide d-flex align-items-center contact">
           <div class="container content">
-            <div class="border border-2 border-light m-0 px-2 py-5 text-center">
-              <h2 class="display-5">
-                一切為了孩子，為了孩子的一切，為了一切的孩子！
-              </h2>
+            <div class="border border-2 border-light m-0 p-5">
+              <h3 class="display-5 text-start">一切為了孩子的</h3>
+              <h3 class="display-5">為了孩子的一切</h3>
+              <h3 class="display-5 text-end">為了一切的孩子</h3>
               <button type="button" class="btn btn-lg btn-primary">
                 立即撥打安心專線，0885-885-880，您幫幫我，幫幫我，幫幫您
               </button>
