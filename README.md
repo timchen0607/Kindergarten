@@ -10,8 +10,8 @@
 
 ### 心得
 
-- <<文字文字文字>>
+- 利用 Swiper 輪播設計水平滾動網頁
 
 ### 成果展示
 
-- <<超連結>>
+- https://timchen0607.github.io/Kindergarten/
