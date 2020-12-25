@@ -35,11 +35,21 @@
         background: #ffffffaa;
         padding: 3rem;
       }
+      .swiper-pagination-bullet {
+        width: auto;
+        height: auto;
+        color: #ffffff;
+        font-size: 1.5rem;
+        border-radius: 1.5rem;
+        text-align: center;
+        margin: 0 1rem;
+        padding: 0 1rem;
+      }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
-      <div class="container">
+      <div class="container justify-content-between">
         <h2 class="d-flex align-items-center m-2">
           <img class="col" src="./images/kindergarten.png" />
           <span class="col px-2 text-nowrap">鯫生</span>
@@ -52,17 +62,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">首頁</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">辦學理念</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">聯繫我們</a>
-            </li>
-          </ul>
+          <div class="pagination ms-auto"></div>
         </div>
       </div>
     </nav>
@@ -155,6 +155,15 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       new Swiper(".swiper-container", {
+        pagination: {
+          el: ".pagination",
+          type: "bullets",
+          clickable: true,
+          renderBullet: function (index, className) {
+            let arr = ["首頁", "辦學理念", "聯繫我們"];
+            return `<span class="${className}">${arr[index]}</span>`;
+          },
+        },
         scrollbar: {
           // 顯示底部滾動條
           el: ".swiper-scrollbar",
