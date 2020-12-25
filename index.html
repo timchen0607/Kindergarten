@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" / >
     <title>Kindergarten</title>
 
     <link
@@ -14,6 +15,10 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <style>
+      .swiper-container {
+        width: 100vw;
+        height: calc(100vh - 70px);
+      }
       .home {
         background: linear-gradient(120deg, #ffffff66 50%, transparent 50%)
             center center,
@@ -21,63 +26,39 @@
       }
       .fullpage {
         background: url("./images/fullpage.jpg") no-repeat center center / cover;
+        display: flex;
+        align-items: center;
       }
       .fullpage .content {
-        background: #ffffff66;
+        background: #ffffffaa;
+        padding: 3rem;
       }
     </style>
   </head>
   <body class="overflow-hidden">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
       <div class="container">
-        <a class="navbar-brand" href="#">鯫生</a>
+        <h2 class="d-flex align-items-center m-2">
+          <img class="col" src="./images/kindergarten.png" />
+          <span class="col px-2 text-nowrap">鯫生</span>
+        </h2>
         <button
           class="navbar-toggler"
-          type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#menu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+              <a class="nav-link" href="#">辦學理念</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link" href="#">聯繫我們</a>
             </li>
           </ul>
         </div>
@@ -86,7 +67,7 @@
 
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide vw-100 vh-100 p-5 home">
+        <div class="swiper-slide p-5 home">
           <div
             class="w-50 h-100 d-flex flex-column justify-content-center align-items-center"
           >
@@ -99,14 +80,82 @@
             </button>
           </div>
         </div>
-        <div class="swiper-slide vw-100 vh-100 p-5 fullpage">
-          <div class="content w-100 h-100"></div>
+        <div class="swiper-slide fullpage">
+          <div class="container content">
+            <div class="row border border-2 border-light m-0 p-5">
+              <div class="col-12">
+                <h2 class="display-5">給您的孩子一個完美的學前旅程。</h2>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-transparent">
+                  <img src="./images/faith-1.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      全方位的雙語能力 － 全語言教育
+                    </h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Recusandae pariatur molestiae asperiores magnam, quibusdam
+                      qui voluptatem exercitationem voluptatum perspiciatis
+                      voluptates culpa enim quod fugiat! Quod distinctio impedit
+                      non nemo possimus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-transparent">
+                  <img src="./images/faith-2.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      獨立思考與終身學習 － 探索式教育
+                    </h5>
+                    <p class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam incidunt quis culpa veniam fugiat recusandae
+                      magnam dolorum impedit sint soluta. Ut atque porro
+                      corporis eaque modi aliquid laudantium, magnam voluptate!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-transparent">
+                  <img src="./images/faith-3.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      人文關懷與社會參與 － 全人式教育
+                    </h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Veritatis, reprehenderit officia. Possimus eligendi vitae
+                      commodi error reiciendis, sequi consequuntur voluptatibus
+                      esse eius delectus laborum iure dolorem ducimus a ipsum
+                      ex.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide vw-100 vh-100 p-5">Slide 3</div>
+        <div class="swiper-slide fullpage">
+          <div class="container content">
+            <div class="border border-2 border-light m-0 px-2 py-5 text-center">
+              <h2 class="display-5">
+                一切為了孩子，為了孩子的一切，為了一切的孩子！
+              </h2>
+              <button type="button" class="btn btn-lg btn-primary">
+                立即撥打安心專線，0885-885-880，您幫幫我，幫幫我，幫幫您
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="swiper-scrollbar"></div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       new Swiper(".swiper-container", {
