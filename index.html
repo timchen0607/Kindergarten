@@ -18,28 +18,24 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="container">
-        <h2 class="d-flex align-items-center m-2">
-          <img class="col" src="./images/kindergarten.png" />
-          <span class="col px-2 text-nowrap">鯫生</span>
+      <div class="container navbar-content">
+        <h2 class="navbar-title">
+          <img src="./images/kindergarten.png" />
+          <span>鯫生</span>
         </h2>
-        <div class="pagination"></div>
+        <div class="navbar-pagination"></div>
       </div>
     </nav>
 
-    <div class="swiper-container text-center">
+    <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide p-5 home">
-          <div
-            class="w-50 h-100 d-flex flex-column justify-content-center align-items-center"
-          >
-            <h1 class="display-1 fw-bold">鯫生私立貴族幼兒園</h1>
-            <p class="display-6">
+        <div class="swiper-slide home">
+          <div class="home-content">
+            <h1 class="home-title">鯫生私立貴族幼兒園</h1>
+            <p class="home-text">
               教育從心開始<br />我們將貼心的照顧您的孩子<br />守護天使稚嫩的翅膀
             </p>
-            <button type="button" class="btn btn-lg btn-primary">
-              聯繫鯫生，給孩子一個美好的童年
-            </button>
+            <button class="home-btn">聯繫鯫生，給孩子一個美好的童年</button>
           </div>
         </div>
         <div class="swiper-slide d-flex align-items-center faith">
@@ -120,7 +116,7 @@
     <script>
       new Swiper(".swiper-container", {
         pagination: {
-          el: ".pagination",
+          el: ".navbar-pagination",
           type: "bullets",
           clickable: true,
           renderBullet: function (index, className) {
