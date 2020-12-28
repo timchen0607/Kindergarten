@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  max-width: 1200px;
+  @include pad {
+    max-width: 720px;
+  }
+  @include mobile {
+    max-width: 540px;
+  }
+}
+
+.swiper-container {
+  width: 100vw;
+  height: calc(100vh - 70px);
+}
+.home {
+  background: linear-gradient(120deg, #ffffff66 50%, transparent 50%) center
+      center,
+    url("../images/bg_home.jpg") no-repeat center right / cover;
+}
+.faith {
+  background: url("../images/bg_faith.jpg") no-repeat center center / cover;
+}
+.contact {
+  background: url("../images/bg_contact.jpg") no-repeat center center / cover;
+}
+.content {
+  background: #ffffffaa;
+  padding: 3rem;
+}
+.swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 0 1rem;
+}

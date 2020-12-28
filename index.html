@@ -6,64 +6,24 @@
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" / >
     <title>鯫生's Kindergarten</title>
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <style>
-      .swiper-container {
-        width: 100vw;
-        height: calc(100vh - 70px);
-      }
-      .home {
-        background: linear-gradient(120deg, #ffffff66 50%, transparent 50%)
-            center center,
-          url("./images/bg_home.jpg") no-repeat center right / cover;
-      }
-      .faith {
-        background: url("./images/bg_faith.jpg") no-repeat center center / cover;
-      }
-      .contact {
-        background: url("./images/bg_contact.jpg") no-repeat center center /
-          cover;
-      }
-      .content {
-        background: #ffffffaa;
-        padding: 3rem;
-      }
-      .swiper-pagination-bullet {
-        width: auto;
-        height: auto;
-        color: #ffffff;
-        font-size: 1.5rem;
-        border-radius: 1.5rem;
-        text-align: center;
-        margin: 0 1rem;
-        padding: 0 1rem;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/all.min.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
-      <div class="container justify-content-between">
+    <nav class="navbar">
+      <div class="container">
         <h2 class="d-flex align-items-center m-2">
           <img class="col" src="./images/kindergarten.png" />
           <span class="col px-2 text-nowrap">鯫生</span>
         </h2>
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <div class="pagination ms-auto"></div>
-        </div>
+        <div class="pagination"></div>
       </div>
     </nav>
 
@@ -156,7 +116,6 @@
       <div class="swiper-scrollbar"></div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       new Swiper(".swiper-container", {
