@@ -60,6 +60,7 @@
     outline: none;
     @include mobile {
       font-size: 1rem;
+      margin: 0 0.2rem;
       padding: 0.5rem;
     }
   }
@@ -111,8 +112,10 @@
   &-content {
     background: #ffffffaa;
     padding: 3rem;
+    overflow-y: auto;
     @include pad {
       padding: 1rem;
+      max-height: 80vh;
     }
   }
   &-title {
@@ -190,6 +193,9 @@
         left: -100%;
       }
     }
+    @include pad {
+      height: 60%;
+    }
   }
 }
 
@@ -201,8 +207,10 @@
   &-content {
     background: #ffffffaa;
     padding: 3rem;
+    overflow-y: auto;
     @include pad {
       padding: 1rem;
+      max-height: 80vh;
     }
   }
   &-title {
